@@ -1,0 +1,70 @@
+[package]
+name = "gwf"
+version = "0.1.0"
+edition = "2021"
+authors = ["Nonanti"]
+description = "Git Workflow Automator - Streamline your Git workflows with ease"
+license = "MIT"
+repository = "https://github.com/Nonanti/gwf-cli"
+keywords = ["git", "workflow", "automation", "cli", "productivity"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+# CLI framework
+clap = { version = "4.5", features = ["derive", "cargo", "env"] }
+clap_complete = "4.5"  # Shell completions
+
+# Git operations
+git2 = "0.18"
+
+# Async runtime
+tokio = { version = "1.39", features = ["full"] }
+
+# Terminal UI
+indicatif = "0.17"  # Progress bars
+colored = "2.1"     # Colored output
+dialoguer = "0.11"  # Interactive prompts
+console = "0.15"    # Terminal handling
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+
+# Utilities
+dirs = "5.0"        # User directories
+which = "6.0"       # Find executables
+semver = "1.0"      # Version parsing
+regex = "1.10"
+chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }      # Date/time handling
+atty = "0.2"        # Terminal detection
+webbrowser = "1.0"  # Open browser
+urlencoding = "2.1" # URL encoding
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[dev-dependencies]
+tempfile = "3.10"
+pretty_assertions = "1.4"
+mockall = "0.12"
+
+[profile.release]
+opt-level = "z"     # Optimize for size
+lto = true          # Link Time Optimization
+codegen-units = 1   # Single codegen unit for better optimization
+strip = true        # Strip symbols
+panic = "abort"     # Smaller binary size
+
+[lib]
+name = "gwf"
+path = "src/lib.rs"
+
+[[bin]]
+name = "gwf"
+path = "src/main.rs"
