@@ -15,7 +15,7 @@ clap = { version = "4.5", features = ["derive", "cargo", "env"] }
 clap_complete = "4.5"  # Shell completions
 
 # Git operations
-git2 = "0.18"
+git2 = "0.20"
 
 # Async runtime
 tokio = { version = "1.39", features = ["full"] }
