@@ -5,7 +5,8 @@ Streamline your Git workflows with powerful automation and best practices.
 [![Build Status](https://github.com/Nonanti/gwf-cli/actions/workflows/main.yml/badge.svg)](https://github.com/Nonanti/gwf-cli/actions/workflows/main.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Rust Version](https://img.shields.io/badge/rust-1.82%2B-orange.svg)](https://www.rust-lang.org/)
-
+[![Crates.io](https://img.shields.io/crates/v/gwf.svg)](https://crates.io/crates/gwf)
+[![Downloads](https://img.shields.io/crates/d/gwf.svg)](https://crates.io/crates/gwf)
 ## Features
 
 - **Smart Branch Management** - Create and manage feature, hotfix, and release branches
@@ -168,5 +169,6 @@ Contributions are welcome! Please check out the [issues](https://github.com/Nona
 MIT License - see [LICENSE](LICENSE) for details.
 
 ---
+
 
 Built with Rust for speed and reliability.
