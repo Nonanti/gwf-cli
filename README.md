@@ -42,7 +42,7 @@ Expand-Archive gwf.zip -DestinationPath .
 #### From Source
 
 ```bash
-cargo install --git https://github.com/Nonanti/gwf-cli
+cargo install gwf
 ```
 
 ## Quick Start
@@ -172,3 +172,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 
 Built with Rust for speed and reliability.
+
