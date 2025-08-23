@@ -162,6 +162,21 @@ enum Commands {
         /// Shell to generate completions for
         shell: clap_complete::Shell,
     },
+
+    /// Show enhanced repository status
+    Status,
+
+    /// Undo recent git operations
+    Undo,
+
+    /// Show repository statistics
+    Stats,
+
+    /// Manage version tags
+    Tag,
+
+    /// Find commits using binary search
+    Bisect,
 }
 
 #[tokio::main]
@@ -243,6 +258,21 @@ async fn main() -> Result<()> {
         }
         Commands::Completions { shell } => {
             commands::completions::execute(shell);
+        }
+        Commands::Status => {
+            commands::status::run().await?;
+        }
+        Commands::Undo => {
+            commands::undo::run().await?;
+        }
+        Commands::Stats => {
+            commands::stats::run().await?;
+        }
+        Commands::Tag => {
+            commands::tag::run().await?;
+        }
+        Commands::Bisect => {
+            commands::bisect::run().await?;
         }
     }
 
