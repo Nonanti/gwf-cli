@@ -1,3 +1,4 @@
+pub mod bisect;
 pub mod cleanup;
 pub mod commit;
 pub mod completions;
@@ -8,4 +9,8 @@ pub mod init;
 pub mod pr;
 pub mod release;
 pub mod standup;
+pub mod stats;
+pub mod status;
 pub mod sync;
+pub mod tag;
+pub mod undo;
