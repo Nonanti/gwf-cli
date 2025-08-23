@@ -31,6 +31,7 @@ pub async fn execute(title: Option<String>, target: Option<String>, draft: bool)
 
     print_info("Creating pull request...");
 
+    // FIXME: add support for GitLab and Bitbucket
     let gh_available = which::which("gh").is_ok();
 
     if gh_available {

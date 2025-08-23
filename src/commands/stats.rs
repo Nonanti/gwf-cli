@@ -4,6 +4,9 @@ use git2::Repository;
 use std::collections::HashMap;
 use chrono::{DateTime, Utc, Duration};
 
+// TODO: add language stats
+// TODO: add contribution graph
+
 pub async fn run() -> Result<()> {
     let repo = Repository::open(".")?;
     let mut revwalk = repo.revwalk()?;

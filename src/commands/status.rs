@@ -60,5 +60,8 @@ pub async fn run() -> Result<()> {
         }
     }
     
+    // TODO: show PR status if available
+    // TODO: add stash count
+    
     Ok(())
 }

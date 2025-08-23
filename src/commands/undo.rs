@@ -4,6 +4,7 @@ use dialoguer::{Select, Confirm};
 use std::process::Command;
 
 pub async fn run() -> Result<()> {
+    // TODO: add reflog support for more undo options
     let choices = vec![
         "Undo last commit (keep changes)",
         "Undo last commit (discard changes)",

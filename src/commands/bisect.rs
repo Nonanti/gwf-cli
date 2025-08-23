@@ -93,6 +93,7 @@ fn reset_bisect() -> Result<()> {
 }
 
 fn automated_bisect() -> Result<()> {
+    // HACK: this assumes the test script returns proper exit codes
     let script_path: String = Input::new()
         .with_prompt("Test script path")
         .interact_text()?;

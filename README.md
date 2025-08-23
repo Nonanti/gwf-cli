@@ -15,6 +15,9 @@ Streamline your Git workflows with powerful automation and best practices.
 - **Branch Synchronization** - Keep branches up-to-date with configurable strategies
 - **Cleanup Automation** - Remove merged branches safely
 - **Multi-Platform** - Works on Linux, macOS, and Windows
+- **Repository Analytics** - View commit statistics and contributor data
+- **Interactive Undo** - Safely revert recent Git operations
+- **Version Tagging** - Semantic versioning support
 
 ## Installation
 
@@ -159,6 +162,21 @@ gwf completions powershell | Out-String | Invoke-Expression
 
 - Git 2.0+
 - GitHub CLI (optional, for PR features)
+
+## Known Issues
+
+- PR creation only works with GitHub CLI currently
+- `gwf bisect` automated mode may not work with all test scripts
+- Remote sync sometimes fails with large repositories
+- Stats command can be slow on repos with 10k+ commits
+
+## Roadmap
+
+- [ ] GitLab and Bitbucket support for PR creation
+- [ ] Interactive rebase helper
+- [ ] Commit message templates
+- [ ] Hook management system
+- [ ] Plugin architecture
 
 ## Contributing
 

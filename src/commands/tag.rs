@@ -97,6 +97,7 @@ pub async fn run() -> Result<()> {
         .default(true)
         .interact()?;
     
+    // TODO: add GPG signing support
     Command::new("git")
         .args(&["tag", "-a", &tag_name, "-m", &message])
         .status()?;
