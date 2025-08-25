@@ -1,4 +1,4 @@
-# GWF - Git Workflow Automator 🚀✨
+# GWF - Git Workflow Automator 
 
 Streamline your Git workflows with powerful automation and best practices.
 
@@ -190,4 +190,5 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 
 Built with Rust for speed and reliability.
+
 
