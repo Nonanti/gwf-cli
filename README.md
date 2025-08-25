@@ -1,4 +1,4 @@
-# GWF - Git Workflow Automator 🚀
+# GWF - Git Workflow Automator 🚀✨
 
 Streamline your Git workflows with powerful automation and best practices.
 
