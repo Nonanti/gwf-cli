@@ -39,7 +39,7 @@ serde_json = "1.0"
 toml = "0.9"
 
 # Utilities
-dirs = "5.0"        # User directories
+dirs = "6.0"        # User directories
 which = "6.0"       # Find executables
 semver = "1.0"      # Version parsing
 regex = "1.10"
